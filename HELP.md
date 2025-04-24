@@ -28,3 +28,7 @@ bash n lts # 安裝最新版 LTS 的 node
 
 ### frontend 起專案
 npm create vite@latest frontend -- --template react-ts
+
+
+### 後端Docker啟動指令
+docker-compose up --build

@@ -1,4 +1,4 @@
-package com.example.smartvision;
+package com.example.SmartVision;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

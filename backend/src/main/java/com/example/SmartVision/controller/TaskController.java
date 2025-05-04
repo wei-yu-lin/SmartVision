@@ -1,11 +1,13 @@
-package com.example.smartvision.controller;
+package com.example.SmartVision.controller;
 
-import com.example.smartvision.model.Task;
-import com.example.smartvision.repository.TaskRepository;
+import com.example.SmartVision.model.Task;
+import com.example.SmartVision.repository.TaskRepository;
+
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@Slf4j
 @RestController
 @RequestMapping("/api/tasks")
 public class TaskController {
@@ -17,6 +19,7 @@ public class TaskController {
 
     @GetMapping
     public List<Task> getAllTasks() {
+        log.info("Fetching all tasks from the database.");
         return taskRepository.findAll();
     }
 

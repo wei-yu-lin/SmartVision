@@ -1,4 +1,4 @@
-package com.example.smartvision.model;
+package com.example.SmartVision.model;
 
 import jakarta.persistence.*;
 

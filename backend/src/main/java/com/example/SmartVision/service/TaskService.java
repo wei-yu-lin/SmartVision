@@ -1,7 +1,7 @@
-package com.example.smartvision.service;
+package com.example.SmartVision.service;
 
-import com.example.smartvision.model.Task;
-import com.example.smartvision.repository.TaskRepository;
+import com.example.SmartVision.model.Task;
+import com.example.SmartVision.repository.TaskRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,0 +1,11 @@
+# Maven
+FROM maven:3.9.9-eclipse-temurin-17
+WORKDIR /app
+# 複製完整程式碼（這樣才有 src/）
+COPY . .
+
+RUN mvn dependency:go-offline
+
+# 開啟 Spring Devtools 熱更新（需在 pom.xml 中加入 devtools）
+CMD ["mvn", "spring-boot:run"]
+

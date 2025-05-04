@@ -19,7 +19,7 @@ public class TaskController {
 
     @GetMapping
     public List<Task> getAllTasks() {
-        log.info("Fetching all tasks from the database.");
+        log.info("CCCCCC");
         return taskRepository.findAll();
     }
 

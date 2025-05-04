@@ -31,4 +31,11 @@ npm create vite@latest frontend -- --template react-ts
 
 
 ### 後端Docker啟動指令
+1. 一般模式:
+#### 執行 backend/Dockerfile 和 backend/docker-compose.yml
 docker-compose up --build
+2. Devlop模式:
+#### 執行 backend/Dockerfile.dev 和 backend/docker-compose.dev.yml
+透過maven直接run spring boot來hot reload方便開發
+```
+docker-compose -f docker-compose.dev.yml up --build

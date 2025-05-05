@@ -38,4 +38,6 @@ docker-compose up --build
 #### 執行 backend/Dockerfile.dev 和 backend/docker-compose.dev.yml
 透過maven直接run spring boot來hot reload方便開發
 ```
+mvn package -DskipTests
 docker-compose -f docker-compose.dev.yml up --build
+```

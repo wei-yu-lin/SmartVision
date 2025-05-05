@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 @Slf4j
 @RestController
 @RequestMapping("/api/tasks")
@@ -17,14 +18,21 @@ public class TaskController {
         this.taskRepository = taskRepository;
     }
 
+    @GetMapping("/{id}")
+    public Task getById(@PathVariable UUID id) {
+        log.info("getById with id: {}", id);
+        return taskRepository.findById(id);
+    }
+
     @GetMapping
     public List<Task> getAllTasks() {
-        log.info("CCCCCC");
+        log.info("5555555");
         return taskRepository.findAll();
     }
 
     @PostMapping
     public Task createTask(@RequestBody Task task) {
+        log.info(task.toString());
         return taskRepository.save(task);
     }
 

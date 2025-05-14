@@ -16,7 +16,7 @@ backend/target/*
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-
+uploads/
 ### VS Code ###
 .vscode/
 

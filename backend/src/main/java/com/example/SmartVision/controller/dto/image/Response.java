@@ -1,4 +1,4 @@
-package com.example.SmartVision.controller.dto.food;
+package com.example.SmartVision.controller.dto.image;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
